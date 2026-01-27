@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preisrechner</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="left container">
+      <div class="heading">Preisrechner</div>
+      <div class="articleButtons">
+        <button
+          class="article"
+          onclick="
+            a1();
+            b();
+          "
+        >
+          <span class="name">Kaffe</span><br />
+          <span class="price">3,50&euro;</span>
+        </button>
+        <button
+          class="article"
+          onclick="
+            a2();
+            b();
+          "
+        >
+          <span class="name">Tee</span><br />
+          <span class="price">2,50&euro;</span>
+        </button>
+        <button
+          class="article"
+          onclick="
+            a3();
+            b();
+          "
+        >
+          <span class="name">Apfelschorle</span><br />
+          <span class="price">4,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a4();
+            b();
+          "
+        >
+          <span class="name">Wasser</span><br />
+          <span class="price">2,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a5();
+            b();
+          "
+        >
+          <span class="name">Bratwurst</span><br />
+          <span class="price">5,50&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a6();
+            b();
+          "
+        >
+          <span class="name">Schnitzel</span><br />
+          <span class="price">12,50&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a7();
+            b();
+          "
+        >
+          <span class="name">Currywurst</span><br />
+          <span class="price">6,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a8();
+            b();
+          "
+        >
+          <span class="name">Brezel</span><br />
+          <span class="price">4,50&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a9();
+            b();
+          "
+        >
+          <span class="name">Käsespäzle</span><br />
+          <span class="price">8,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a10();
+            b();
+          "
+        >
+          <span class="name">Pommes</span><br />
+          <span class="price">3,50&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a11();
+            b();
+          "
+        >
+          <span class="name">Apfelstrudel</span><br />
+          <span class="price">4,50&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a12();
+            b();
+          "
+        >
+          <span class="name">Berliner</span><br />
+          <span class="price">3,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a13();
+            b();
+          "
+        >
+          <span class="name">Schwarzwälder</span><br />
+          <span class="price">3,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a14();
+            b();
+          "
+        >
+          <span class="name">Brötchen</span><br />
+          <span class="price">2,50&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a15();
+            b();
+          "
+        >
+          <span class="name">Leberkäse</span><br />
+          <span class="price">7,00&euro;</span></button
+        ><button
+          class="article"
+          onclick="
+            a16();
+            b();
+          "
+        >
+          <span class="name">Kartoffelsalat</span><br />
+          <span class="price">6,50&euro;</span>
+        </button>
+      </div>
+      <div class="calculator">
+        <span class="calulatorLeft">Gesamt</span
+        ><span class="calculatorRight" id="sum">0&euro;</span>
+      </div>
+
+      <button class="resetbutton">Zurücksetzen</button>
+
+      <div class="bottomButtons">
+        <button class="onSitebutton">Vor Ort</button
+        ><button class="deliverybutton">Lieferung</button>
+      </div>
+    </div>
+    <div class="right container">
+      <div class="heading">Bestellung</div>
+      <div class="orderList">
+        <div class="listmember">Kaffe: 3,5&euro;</div>
+        <div class="listmember">Kaffe: 3,5&euro;</div>
+        <div class="listmember">Kaffe: 3,5&euro;</div>
+        <div class="listmember">Kaffe: 3,5&euro;</div>
+      </div>
+    </div>
+  </body>
+</html>
