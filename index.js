@@ -1,21 +1,20 @@
-var sum = 0;
-var element = document.getElementById("sum");
+let sum = 0;
+const sumEl = document.getElementById("sum");
+const orderListEl = document.getElementById("orderList");
 
-var orderList = document.getElementById("orderList");
-
-function adder(price, name) {
+function addPrice(price, name) {
   sum += price;
-  element.innerHTML = sum + " €";
-  orderHistory(price, name);
+  sumEl.innerHTML = sum + " €";
+  displayHistory(price, name);
 }
 
-function orderHistory(price, name) {
-  orderList.innerHTML += "<p>" + name + " " + price + " €" + "</p>";
+function displayHistory(price, name) {
+  orderListEl.innerHTML += "<p>" + name + " " + price + " €" + "</p>";
 }
 
 function reloadSite() {
-  orderList.innerHTML = "";
-  element.innerHTML = 0 + " €";
+  orderListEl.innerHTML = "";
+  sumEl.innerHTML = 0 + " €";
   sum = 0;
 }
 
