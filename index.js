@@ -1,70 +1,41 @@
 var sum = 0;
 var element = document.getElementById("sum");
 
-function a1() {
-  sum += 3.5;
+var orderList = document.getElementById("orderList");
+
+function adder(price, name) {
+  sum += price;
   element.innerHTML = sum + " €";
+  orderHistory(price, name);
 }
-function a2() {
-  sum += 2.5;
-  element.innerHTML = sum + " €";
+
+function orderHistory(price, name) {
+  orderList.innerHTML += "<p>" + name + " " + price + " €" + "</p>";
 }
-function a3() {
-  sum += 4;
-  element.innerHTML = sum + " €";
-}
-function a4() {
-  sum += 2;
-  element.innerHTML = sum + " €";
-}
-function a5() {
-  sum += 5.5;
-  element.innerHTML = sum + " €";
-}
-function a6() {
-  sum += 12.5;
-  element.innerHTML = sum + " €";
-}
-function a7() {
-  sum += 6;
-  element.innerHTML = sum + " €";
-}
-function a8() {
-  sum += 4.5;
-  element.innerHTML = sum + " €";
-}
-function a9() {
-  sum += 8;
-  element.innerHTML = sum + " €";
-}
-function a10() {
-  sum += 3.5;
-  element.innerHTML = sum + " €";
-}
-function a11() {
-  sum += 4.5;
-  element.innerHTML = sum + " €";
-}
-function a12() {
-  sum += 3;
-  element.innerHTML = sum + " €";
-}
-function a13() {
-  sum += 3;
-  element.innerHTML = sum + " €";
-}
-function a14() {
-  sum += 2.5;
-  element.innerHTML = sum + " €";
-}
-function a15() {
-  sum += 7;
-  element.innerHTML = sum + " €";
-}
-function a16() {
-  sum += 6.5;
-  element.innerHTML = sum + " €";
-}
+
 function reloadSite() {
-  location.reload();
+  orderList.innerHTML = "";
+  element.innerHTML = 0 + " €";
+  sum = 0;
+}
+
+function onSite() {
+  if (sum <= 0) {
+    alert("Bitte fügen Sie zuerst Artikel hinzu");
+  } else {
+    alert("Bestellung für vor Ort abgeschlossen! Gesamtbetrag: " + sum + " €");
+  }
+}
+function deliveryButton() {
+  if (sum <= 0) {
+    alert("Bitte fügen Sie zuerst Artikel hinzu");
+  } else if (sum > 0 && sum < 20) {
+    alert(
+      "Mindestbestellwert für Lieferung: 20€ ! Akueller Betrag: " + sum + " €",
+    );
+  } else {
+    alert(
+      "Bestellung für Lieferung abgeschlossen! Gesamtbetrag: " + sum + " €",
+    );
+  }
 }

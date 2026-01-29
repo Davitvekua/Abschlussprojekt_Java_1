@@ -32,7 +32,7 @@ body {
 }
 .article {
   padding: 0.8rem 1.7rem 0.8rem 1.7rem;
-  border: 0.3rem #fbe7e7 solid;
+  border: 0.2rem #fbe7e7 solid;
   border-radius: 0.8rem;
 }
 .article:hover {
@@ -94,5 +94,10 @@ body {
   font-size: 1.1rem;
 }
 .orderList {
-  overflow-block: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  overflow-y: scroll;
+  min-width: 15vw;
+  height: 70vh;
 }

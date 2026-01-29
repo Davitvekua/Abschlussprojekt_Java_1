@@ -11,54 +11,54 @@
     <div class="left container">
       <div class="heading">Preisrechner</div>
       <div class="articleButtons">
-        <button class="article" onclick="a1()">
+        <button class="article" onclick="adder(3.5, 'Kaffe')">
           <span class="name">Kaffe</span><br />
           <span class="price">3,50&euro;</span>
         </button>
-        <button class="article" onclick="a2()">
+        <button class="article" onclick="adder(2.5, 'Tee')">
           <span class="name">Tee</span><br />
           <span class="price">2,50&euro;</span>
         </button>
-        <button class="article" onclick="a3()">
+        <button class="article" onclick="adder(4, 'Apfelschorle')">
           <span class="name">Apfelschorle</span><br />
           <span class="price">4,00&euro;</span></button
-        ><button class="article" onclick="a4()">
+        ><button class="article" onclick="adder(2, 'Wasser')">
           <span class="name">Wasser</span><br />
           <span class="price">2,00&euro;</span></button
-        ><button class="article" onclick="a5()">
+        ><button class="article" onclick="adder(5.5, 'Bratwurst')">
           <span class="name">Bratwurst</span><br />
           <span class="price">5,50&euro;</span></button
-        ><button class="article" onclick="a6()">
+        ><button class="article" onclick="adder(12.5, 'Schnitzel')">
           <span class="name">Schnitzel</span><br />
           <span class="price">12,50&euro;</span></button
-        ><button class="article" onclick="a7()">
+        ><button class="article" onclick="adder(6, 'Currywurst')">
           <span class="name">Currywurst</span><br />
           <span class="price">6,00&euro;</span></button
-        ><button class="article" onclick="a8()">
+        ><button class="article" onclick="adder(4.5, 'Brezel')">
           <span class="name">Brezel</span><br />
           <span class="price">4,50&euro;</span></button
-        ><button class="article" onclick="a9()">
+        ><button class="article" onclick="adder(8, 'Käsespäzle')">
           <span class="name">Käsespäzle</span><br />
           <span class="price">8,00&euro;</span></button
-        ><button class="article" onclick="a10()">
+        ><button class="article" onclick="adder(3.5, 'Pommes')">
           <span class="name">Pommes</span><br />
           <span class="price">3,50&euro;</span></button
-        ><button class="article" onclick="a11()">
+        ><button class="article" onclick="adder(4.5, 'Apfelstrudel')">
           <span class="name">Apfelstrudel</span><br />
           <span class="price">4,50&euro;</span></button
-        ><button class="article" onclick="a12()">
+        ><button class="article" onclick="adder(3, 'Berliner')">
           <span class="name">Berliner</span><br />
           <span class="price">3,00&euro;</span></button
-        ><button class="article" onclick="a13()">
+        ><button class="article" onclick="adder(3, 'Schwarzwälder')">
           <span class="name">Schwarzwälder</span><br />
           <span class="price">3,00&euro;</span></button
-        ><button class="article" onclick="a14()">
+        ><button class="article" onclick="adder(2.5, 'Brötchen')">
           <span class="name">Brötchen</span><br />
           <span class="price">2,50&euro;</span></button
-        ><button class="article" onclick="a15()">
+        ><button class="article" onclick="adder(7, 'Leberkäse')">
           <span class="name">Leberkäse</span><br />
           <span class="price">7,00&euro;</span></button
-        ><button class="article" onclick="a16()">
+        ><button class="article" onclick="adder(6.5, 'Kartoffelsalat')">
           <span class="name">Kartoffelsalat</span><br />
           <span class="price">6,50&euro;</span>
         </button>
@@ -71,18 +71,15 @@
       <button class="resetbutton" onclick="reloadSite()">Zurücksetzen</button>
 
       <div class="bottomButtons">
-        <button class="onSitebutton">Vor Ort</button
-        ><button class="deliverybutton">Lieferung</button>
+        <button class="onSitebutton" onclick="onSite()">Vor Ort</button
+        ><button class="deliverybutton" onclick="deliveryButton()">
+          Lieferung
+        </button>
       </div>
     </div>
     <div class="right container">
       <div class="heading">Bestellung</div>
-      <div class="orderList">
-        <div class="listmember">Kaffe: 3,5&euro;</div>
-        <div class="listmember">Kaffe: 3,5&euro;</div>
-        <div class="listmember">Kaffe: 3,5&euro;</div>
-        <div class="listmember">Kaffe: 3,5&euro;</div>
-      </div>
+      <div class="orderList" id="orderList"></div>
     </div>
   </body>
 </html>
