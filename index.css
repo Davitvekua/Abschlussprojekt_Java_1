@@ -98,6 +98,6 @@ body {
   flex-direction: column-reverse;
   justify-content: flex-end;
   overflow-y: scroll;
-  min-width: 15vw;
+  width: 15vw;
   height: 70vh;
 }
